@@ -335,7 +335,10 @@ class Bot{
     //Methods
     public function sendMessage($id, $text, $replyMarkup = null, $replyMessage = null){
         $data["chat_id"] = $id;
-        $data["text"] = $text;
+        if(gettype($text)=="array"){
+            $data["text"] = json_encode($text,TRUE | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        }else
+            $data["text"] = $text;
         $data["parse_mode"] = $this->ParseMode;
         $data["disable_web_page_preview"] = $this->webPagePreview;
         $data["disable_notification"] = $this->Notification;
