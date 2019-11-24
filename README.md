@@ -2,6 +2,11 @@
 
 **the best class in php to telegram-bots!!!**
 
+### install
+```bash
+$ composer install yehudae/telegram-bots-class
+```
+
 use:
 ```php
 define('BOT', array(
