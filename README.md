@@ -2,4 +2,4 @@
 
 **the best class in php to telegram-bots!!!**
 
-# [New Repo](https://github.com/PHP-Telegram-Bots/TelegramBots-Class)
+# Moved to [new Repo](https://github.com/PHP-Telegram-Bots/TelegramBots-Class)
